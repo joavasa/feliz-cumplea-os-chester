@@ -33,10 +33,18 @@
             <a href="https://wa.me/51963354497" target="_blank">963 354 497</a>
         </p>
 
-        
+            <audio id="birthdaySong" src="fc.mp3" preload="auto"></audio>
+   
+        <script>
+            function playBirthdaySong() {
+                alert("¡Disfruta de la canción de cumpleaños!"); // Mensaje de alerta
+                const birthdaySong = document.getElementById('birthdaySong');
+                birthdaySong.play().catch(error => {
+                    console.log("No se pudo reproducir la canción:", error);
+                });
+            }
+        </script>   
     </div>
 </body>
 </html>
 
-
-</html>
